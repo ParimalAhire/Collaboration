@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+    padding: 15px 0;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar {
+    justify-content: flex-end;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(rgba(52, 58, 64, 0.7), rgba(52, 58, 64, 0.7)), url('your-background-image.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+.highlight {
+    color: #17a2b8;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #f8f9fa;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    background-color: #f8f9fa;
+}
+
+.portfolio h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #fff;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #138496;
+}
+
+/* Footer Section Styles */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .about h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 28px;
+    }
+}
