@@ -9,30 +9,23 @@ body {
 }
 
 /* Header Styles */
-header {
-    background-color: #343a40;
-    padding: 15px 0;
-}
-
-header h1 {
-    color: #fff;
-    font-size: 36px;
-    margin: 0;
-}
-
-nav a {
-    color: #fff;
+nav a { 
+    color: rgb(16, 25, 43); 
     font-weight: bold;
 }
 
 .navbar {
     justify-content: flex-end;
+    background-color: rgb(126, 141, 156)
 }
 
-.navbar-toggler-icon {
-    background-color: #fff;
+.navbar-brand.no-hover-color {
+    color: rgb(16, 25, 43) !important; 
 }
 
+.navbar-brand.no-hover-color:hover {
+    color: rgb(16, 25, 43) !important;
+}
 .navbar-nav {
     text-align: center;
 }
@@ -42,19 +35,19 @@ nav a {
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
+    color: rgb(16, 25, 43);
     font-weight: bold;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #17a2b8;
+    color: #2cc7df;
 }
 
 /* Hero Section Styles */
 .hero {
-    background: linear-gradient(rgba(52, 58, 64, 0.7), rgba(52, 58, 64, 0.7)), url('your-background-image.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(52, 58, 64, 0.7), rgba(32, 87, 143, 0.7));
     color: #fff;
     text-align: center;
     padding: 100px 0;
@@ -77,30 +70,7 @@ nav a {
 .about {
     background-color: #f8f9fa;
 }
-
-.about h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-/* Portfolio Section Styles */
-.portfolio {
-    background-color: #f8f9fa;
-}
-
-.portfolio h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.project img {
-    max-width: 100%;
-    border-radius: 5px;
-}
-
-.project h3 {
-    margin: 10px 0;
-}
+/* ... Other existing styles ... */
 
 /* Contact Section Styles */
 .contact {
@@ -138,6 +108,7 @@ nav a {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
