@@ -1,164 +1,129 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* Body */
+body{
+    background: linear-gradient(to right,#185dd3,#ab76c8);
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* Navigation Bar */
+nav {   
+    background-color: rgb(60, 159, 184); 
+    overflow: auto;
 }
 
-/* Header Styles */
-nav a { 
-    color: rgb(16, 25, 43); 
+nav a {
     font-weight: bold;
-}
-
-.navbar {
-    justify-content: flex-end;
-    background-color: rgb(126, 141, 156)
-}
-
-.navbar-brand.no-hover-color {
-    color: rgb(16, 25, 43) !important; 
-}
-
-.navbar-brand.no-hover-color:hover {
-    color: rgb(16, 25, 43) !important;
-}
-.navbar-nav {
+    font-family: 'Courier New', Courier, monospace  ;
+    font-size: 25px;
+    float: left ;
+    display: block ;
+    color:  rgb(255, 255, 255);
     text-align: center;
-}
-
-.navbar-nav .nav-item {
-    margin: 0 10px;
-}
-
-.navbar-nav .nav-link {
-    color: rgb(16, 25, 43);
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #2cc7df;
-}
-
-/* Hero Section Styles */
-.hero {
-    background: linear-gradient(rgba(52, 58, 64, 0.7), rgba(32, 87, 143, 0.7));
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero-text h2 {
-    font-size: 36px;
-    margin: 0;
-}
-
-.hero-text p {
-    font-size: 18px;
-}
-
-.highlight {
-    color: #17a2b8;
-}
-
-/* About Section Styles */
-.about {
-    background-color: #f8f9fa;
-}
-
-/* Social Media Section Styles*/
-.social-media-section {
-    background-color: #f2f2f2;
     padding: 20px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* header */        
+#header {
     text-align: center;
 }
 
-.social-links {
+#header h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    margin-bottom: 15px;
+    color:whitesmoke;
+}
+#header p{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 15px;
+    font-size: 30px;
+    color: #000000;
+}
+
+/*about */
+#about{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ddd;
+    padding: 80px ;
     margin-top: 10px;
+    font-size: 24px;
+    word-spacing: 7px;
+    margin-bottom: 80px;
 }
 
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
+#about h1 {
+    font-size: 50px;
+    color: #ddd;
+    text-align: center;
 }
 
-.social-links img {
+#projects img{
+    width: 200px;
+    padding: 20px;
+}
+/*social media*/
+#socials {
+    font-size: xx-large ;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+#socials img {
     width: 75px;
-    padding: 5px;
-}
-/* Contact Section Styles */
-.contact {
-    background-color: #fff;
+    padding: 10px;
 }
 
-.contact h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
+/*contact*/
+#contact {
+    background: linear-gradient(to right,#185dd3,#ab76c8);
+    padding: 50px;
 }
 
-.contact form {
+#contact h1 {
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact label {
-    display: block;
-    margin-bottom: 10px;
+#contact label {
+    font-weight: 500;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px;
+    text-align: left;
 }
 
-.contact input,
-.contact textarea {
-    width: 100%;
+#contact input, #contact textarea {
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
 }
 
-.contact button {
-    padding: 10px 20px;
-    background-color: #17a2b8;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+#contact button[type="submit"] {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fff;
+    color:black;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border: none;
+    width: auto;
+    align-self: flex-start;
+    min-width: 100px;
 }
 
-.contact button:hover {
-    background-color: #138496;
-}
-
-/* Footer Section Styles */
-footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 767px) {
-    header h1 {
-        font-size: 20px;
-    }
-
-    .hero-text h2 {
-        font-size: 28px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .about h2,
-    .portfolio h2,
-    .contact h2 {
-        font-size: 28px;
-    }
+#contact button[type="submit"]:hover {
+    background-color: #fff;
 }
